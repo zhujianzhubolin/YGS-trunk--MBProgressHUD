@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="75" id="KGk-i7-Jjw" customClass="AdressCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HuaTi.png" translatesAutoresizingMaskIntoConstraints="NO" id="X3p-6V-U7R">
+                        <rect key="frame" x="13" y="19" width="22" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="4hl-us-0XJ"/>
+                            <constraint firstAttribute="width" constant="22" id="LVa-xA-fIQ"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shouji.png" translatesAutoresizingMaskIntoConstraints="NO" id="oiz-sQ-GR5">
+                        <rect key="frame" x="183" y="19" width="20" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="ZHa-Dp-BJO"/>
+                            <constraint firstAttribute="width" constant="20" id="kC4-8I-Nbx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okA-TD-T97">
+                        <rect key="frame" x="49" y="19" width="104" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="XUB-bu-8jX"/>
+                            <constraint firstAttribute="width" constant="104" id="sPH-Vr-fmg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecz-mh-eO9">
+                        <rect key="frame" x="203" y="19" width="97" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="97" id="OHP-CB-YWp"/>
+                            <constraint firstAttribute="height" constant="20" id="RhO-yO-bap"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGb-lH-vK2">
+                        <rect key="frame" x="13" y="40" width="287" height="33"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiantou" translatesAutoresizingMaskIntoConstraints="NO" id="kuT-8E-cfH">
+                        <rect key="frame" x="302" y="29" width="8" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="Jqz-rU-heS"/>
+                            <constraint firstAttribute="height" constant="12" id="wIO-K4-wZe"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ecz-mh-eO9" firstAttribute="leading" secondItem="oiz-sQ-GR5" secondAttribute="trailing" id="4Oa-tQ-xeG"/>
+                    <constraint firstItem="xGb-lH-vK2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="ClW-WP-d2U"/>
+                    <constraint firstAttribute="bottom" secondItem="xGb-lH-vK2" secondAttribute="bottom" constant="1" id="Ekw-yP-Mlg"/>
+                    <constraint firstItem="Ecz-mh-eO9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="Mzp-OU-68Q"/>
+                    <constraint firstItem="xGb-lH-vK2" firstAttribute="top" secondItem="Ecz-mh-eO9" secondAttribute="bottom" constant="1" id="SZH-SA-5aB"/>
+                    <constraint firstAttribute="trailing" secondItem="Ecz-mh-eO9" secondAttribute="trailing" constant="20" id="WAC-o5-KaP"/>
+                    <constraint firstAttribute="trailing" secondItem="kuT-8E-cfH" secondAttribute="trailing" constant="10" id="ZVd-dk-FQi"/>
+                    <constraint firstItem="okA-TD-T97" firstAttribute="leading" secondItem="X3p-6V-U7R" secondAttribute="trailing" constant="14" id="g2A-yT-IFm"/>
+                    <constraint firstItem="X3p-6V-U7R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="hbX-tD-Hja"/>
+                    <constraint firstItem="oiz-sQ-GR5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="lKq-Bf-bLg"/>
+                    <constraint firstAttribute="trailing" secondItem="xGb-lH-vK2" secondAttribute="trailing" constant="20" id="mWk-fz-iVJ"/>
+                    <constraint firstItem="X3p-6V-U7R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="pDn-Jx-2uZ"/>
+                    <constraint firstItem="okA-TD-T97" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="tuX-Fv-oVe"/>
+                    <constraint firstItem="kuT-8E-cfH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="29" id="ydK-z8-BXz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="address" destination="xGb-lH-vK2" id="CMr-Mn-t3g"/>
+                <outlet property="name" destination="okA-TD-T97" id="DjS-Jp-gp7"/>
+                <outlet property="phone" destination="Ecz-mh-eO9" id="DEA-po-91m"/>
+            </connections>
+            <point key="canvasLocation" x="637" y="482.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="HuaTi.png" width="15" height="18"/>
+        <image name="jiantou" width="10" height="15"/>
+        <image name="shouji.png" width="22" height="22"/>
+    </resources>
+</document>

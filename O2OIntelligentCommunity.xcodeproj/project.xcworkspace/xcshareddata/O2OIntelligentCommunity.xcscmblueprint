@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "c913ceee-e34b-4350-8c2c-0d175cae8dc4++8895",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "c913ceee-e34b-4350-8c2c-0d175cae8dc4++8895" : {
+      "DVTSourceControlWorkingCopyRepositoryPrimaryBranchLocationKey" : "app\/iOS\/Version\/YGS%E2%80%94version\/trunk"
+    },
+    "c913ceee-e34b-4350-8c2c-0d175cae8dc4++5506" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "c913ceee-e34b-4350-8c2c-0d175cae8dc4++8895" : 0,
+    "c913ceee-e34b-4350-8c2c-0d175cae8dc4++5506" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DD148520-07D4-436C-9683-F7EF5D614CCB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "c913ceee-e34b-4350-8c2c-0d175cae8dc4++8895" : "YGS%E2%80%94versionSVN\/",
+    "c913ceee-e34b-4350-8c2c-0d175cae8dc4++5506" : "JYZX%E2%80%94version\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "O2OIntelligentCommunity",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "O2OIntelligentCommunity.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.1.34:9600\/ygs",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "c913ceee-e34b-4350-8c2c-0d175cae8dc4++5506"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.1.34:9600\/ygs",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "c913ceee-e34b-4350-8c2c-0d175cae8dc4++8895"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="KGk-i7-Jjw" customClass="TuanGouStaeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="状态" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTx-B4-VOS">
+                        <rect key="frame" x="70" y="10" width="240" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="9gf-6j-pWk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImg.png" translatesAutoresizingMaskIntoConstraints="NO" id="QQ9-ep-eWP">
+                        <rect key="frame" x="10" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="9oe-xX-Cq3"/>
+                            <constraint firstAttribute="width" constant="50" id="PZz-le-lYk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金额：1000元（含100运费）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WV5-ak-uxg">
+                        <rect key="frame" x="70" y="43" width="240" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="Au5-28-vYZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QQ9-ep-eWP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0gW-E0-4JK"/>
+                    <constraint firstAttribute="bottom" secondItem="WV5-ak-uxg" secondAttribute="bottom" constant="10" id="3wS-Yg-7ag"/>
+                    <constraint firstItem="ZTx-B4-VOS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="IhL-51-jgV"/>
+                    <constraint firstAttribute="trailing" secondItem="ZTx-B4-VOS" secondAttribute="trailing" constant="10" id="e0L-RF-fsZ"/>
+                    <constraint firstAttribute="trailing" secondItem="WV5-ak-uxg" secondAttribute="trailing" constant="10" id="mJG-7m-ng4"/>
+                    <constraint firstItem="ZTx-B4-VOS" firstAttribute="leading" secondItem="QQ9-ep-eWP" secondAttribute="trailing" constant="10" id="nHv-pE-2gD"/>
+                    <constraint firstItem="WV5-ak-uxg" firstAttribute="leading" secondItem="QQ9-ep-eWP" secondAttribute="trailing" constant="10" id="qbE-zl-5x9"/>
+                    <constraint firstItem="QQ9-ep-eWP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="tHJ-8J-Q5q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailsLab" destination="WV5-ak-uxg" id="msG-zW-0fy"/>
+                <outlet property="headImgV" destination="QQ9-ep-eWP" id="JjM-nY-Mn5"/>
+                <outlet property="stateLabe" destination="ZTx-B4-VOS" id="fjj-cg-bJz"/>
+            </connections>
+            <point key="canvasLocation" x="187" y="220"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="defaultImg.png" width="63" height="63"/>
+    </resources>
+</document>

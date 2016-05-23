@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZJXiaoMiRuleFooterV">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预约播放时间:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RvX-Nc-0jg">
+                    <rect key="frame" x="10" y="8" width="357" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="eTm-yB-IBG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6N-B9-0k9">
+                    <rect key="frame" x="143" y="39" width="88" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="9lb-Hm-JAY"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="88" id="HMV-pA-tvd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="结束日期" image="downListLight.png">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnForChooseEndDate:" destination="iN0-l3-epB" eventType="touchUpInside" id="WeJ-CA-yNe"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="至" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k14-Xr-LJQ">
+                    <rect key="frame" x="118" y="40" width="17" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="tKv-Dk-2Xd"/>
+                        <constraint firstAttribute="width" constant="17" id="z50-5a-9Qd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1l-eb-l0e">
+                    <rect key="frame" x="22" y="39" width="88" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="0S3-GA-ma5"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="88" id="oEo-JF-jPt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="开始日期" image="downListLight.png">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnForChooseStartDate:" destination="iN0-l3-epB" eventType="touchUpInside" id="9Ij-sc-vpD"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计:0.00元" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCe-ZS-sWa">
+                    <rect key="frame" x="279" y="71" width="86" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="86" id="E34-d7-C5U"/>
+                        <constraint firstAttribute="height" constant="21" id="Tfr-ga-K9I"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="共0天，" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpT-jr-MQx">
+                    <rect key="frame" x="223" y="71" width="53" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="tt3-E8-mRm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="XCe-ZS-sWa" secondAttribute="trailing" constant="10" id="2le-zR-IDx"/>
+                <constraint firstItem="RvX-Nc-0jg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="3Ma-yg-VCO"/>
+                <constraint firstItem="XCe-ZS-sWa" firstAttribute="top" secondItem="RvX-Nc-0jg" secondAttribute="bottom" constant="42" id="4ZY-dy-T2g"/>
+                <constraint firstItem="q1l-eb-l0e" firstAttribute="top" secondItem="RvX-Nc-0jg" secondAttribute="bottom" constant="10" id="5tT-dX-MW0"/>
+                <constraint firstItem="e6N-B9-0k9" firstAttribute="top" secondItem="RvX-Nc-0jg" secondAttribute="bottom" constant="10" id="KNk-xg-Oa4"/>
+                <constraint firstItem="k14-Xr-LJQ" firstAttribute="leading" secondItem="q1l-eb-l0e" secondAttribute="trailing" constant="8" id="XNd-8Y-jcU"/>
+                <constraint firstItem="cpT-jr-MQx" firstAttribute="centerY" secondItem="XCe-ZS-sWa" secondAttribute="centerY" id="eYm-u2-mJ7"/>
+                <constraint firstItem="XCe-ZS-sWa" firstAttribute="leading" secondItem="cpT-jr-MQx" secondAttribute="trailing" constant="3" id="jru-Vv-YWg"/>
+                <constraint firstItem="q1l-eb-l0e" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="mbs-m4-k25"/>
+                <constraint firstItem="cpT-jr-MQx" firstAttribute="height" secondItem="XCe-ZS-sWa" secondAttribute="height" id="o53-Lc-Qy6"/>
+                <constraint firstItem="e6N-B9-0k9" firstAttribute="leading" secondItem="k14-Xr-LJQ" secondAttribute="trailing" constant="8" id="vsP-2i-f05"/>
+                <constraint firstItem="RvX-Nc-0jg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="wOE-gY-DrG"/>
+                <constraint firstAttribute="trailing" secondItem="RvX-Nc-0jg" secondAttribute="trailing" constant="8" id="xLm-B3-eOf"/>
+                <constraint firstItem="k14-Xr-LJQ" firstAttribute="top" secondItem="RvX-Nc-0jg" secondAttribute="bottom" constant="11" id="yyz-D6-duJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="endDateBtn" destination="e6N-B9-0k9" id="Q3R-Q8-8Uw"/>
+                <outlet property="startDateBtn" destination="q1l-eb-l0e" id="R0b-Oj-pBn"/>
+                <outlet property="totalCountL" destination="XCe-ZS-sWa" id="9Vm-dg-xSU"/>
+                <outlet property="totalDaysL" destination="cpT-jr-MQx" id="ggn-pI-mYy"/>
+            </connections>
+            <point key="canvasLocation" x="437.5" y="364"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="downListLight.png" width="15" height="10"/>
+    </resources>
+</document>

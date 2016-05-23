@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShangChengGoodsDeatil">
+            <connections>
+                <outlet property="addBackView" destination="BSu-FJ-dfV" id="5md-JM-Gog"/>
+                <outlet property="addShopCarBtn" destination="NmI-gz-jbW" id="SUr-NN-BbP"/>
+                <outlet property="inputNum" destination="i9a-iH-gfY" id="uq4-qn-jg5"/>
+                <outlet property="jianBtn" destination="7Dd-T1-V6E" id="1Xs-2K-bma"/>
+                <outlet property="myScrollView" destination="JUY-bd-qDj" id="KwV-tn-OeY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="ScrollView" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUY-bd-qDj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BSu-FJ-dfV">
+                    <rect key="frame" x="0.0" y="617" width="188" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newNum.png" translatesAutoresizingMaskIntoConstraints="NO" id="J52-B9-wyU">
+                            <rect key="frame" x="78" y="9" width="32" height="32"/>
+                            <color key="backgroundColor" red="0.043137254901960784" green="0.37647058823529411" blue="0.99607843137254903" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="Wyg-O9-Mbx"/>
+                                <constraint firstAttribute="width" constant="32" id="ZpG-tO-gQq"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9W-d3-9QL">
+                            <rect key="frame" x="110" y="9" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="20a-6V-Vcd"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="goodsjia_n.png">
+                                <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="goodsjia_h.png"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="shoppingcarplus:" destination="-1" eventType="touchUpInside" id="gPg-Jx-LVE"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i9a-iH-gfY">
+                            <rect key="frame" x="78" y="9" width="32" height="32"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="1WL-is-bng"/>
+                                <constraint firstAttribute="width" constant="32" id="Vfi-Dh-zJA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dd-T1-V6E">
+                            <rect key="frame" x="46" y="9" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="pQZ-Ub-pQE"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="goodsjian_n.png">
+                                <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="goodsjian_h.png"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="shoppingcarless:" destination="-1" eventType="touchUpInside" id="QL7-pb-aKl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.30588235294117649" green="0.30588235294117649" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="i9a-iH-gfY" secondAttribute="centerY" id="1su-19-OeK"/>
+                        <constraint firstItem="7Dd-T1-V6E" firstAttribute="top" secondItem="BSu-FJ-dfV" secondAttribute="top" constant="9" id="3I2-C2-DH7"/>
+                        <constraint firstAttribute="centerX" secondItem="i9a-iH-gfY" secondAttribute="centerX" id="3sl-PW-BgJ"/>
+                        <constraint firstAttribute="bottom" secondItem="s9W-d3-9QL" secondAttribute="bottom" constant="9" id="9ei-2p-gMW"/>
+                        <constraint firstAttribute="bottom" secondItem="7Dd-T1-V6E" secondAttribute="bottom" constant="9" id="Am5-Gs-Upd"/>
+                        <constraint firstItem="i9a-iH-gfY" firstAttribute="leading" secondItem="7Dd-T1-V6E" secondAttribute="trailing" id="JxE-x2-sjT"/>
+                        <constraint firstItem="s9W-d3-9QL" firstAttribute="top" secondItem="BSu-FJ-dfV" secondAttribute="top" constant="9" id="JyZ-cl-UjR"/>
+                        <constraint firstItem="s9W-d3-9QL" firstAttribute="leading" secondItem="i9a-iH-gfY" secondAttribute="trailing" id="RIJ-0o-ZVd"/>
+                        <constraint firstAttribute="centerX" secondItem="J52-B9-wyU" secondAttribute="centerX" id="fD2-fy-DJH"/>
+                        <constraint firstAttribute="centerY" secondItem="J52-B9-wyU" secondAttribute="centerY" id="sD3-6a-Ih9"/>
+                        <constraint firstAttribute="height" constant="50" id="whg-qG-7OR"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmI-gz-jbW">
+                    <rect key="frame" x="188" y="617" width="187" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.42352941176470588" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="加入购物车">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addGoodsToShoppingCar:" destination="-1" eventType="touchUpInside" id="tyM-Ny-CwP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="NmI-gz-jbW" firstAttribute="leading" secondItem="BSu-FJ-dfV" secondAttribute="trailing" id="1Xe-db-2fT"/>
+                <constraint firstItem="BSu-FJ-dfV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QIt-0K-JYt"/>
+                <constraint firstItem="BSu-FJ-dfV" firstAttribute="width" secondItem="NmI-gz-jbW" secondAttribute="width" id="QeB-5T-93x"/>
+                <constraint firstItem="JUY-bd-qDj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VT1-7m-JUc"/>
+                <constraint firstItem="BSu-FJ-dfV" firstAttribute="height" secondItem="NmI-gz-jbW" secondAttribute="height" id="WlA-Ve-wbZ"/>
+                <constraint firstAttribute="bottom" secondItem="NmI-gz-jbW" secondAttribute="bottom" id="gJV-eF-djH"/>
+                <constraint firstAttribute="bottom" secondItem="JUY-bd-qDj" secondAttribute="bottom" id="gY6-Xz-ZQV"/>
+                <constraint firstAttribute="trailing" secondItem="NmI-gz-jbW" secondAttribute="trailing" id="i8d-xJ-PGp"/>
+                <constraint firstItem="JUY-bd-qDj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mQx-He-siU"/>
+                <constraint firstAttribute="bottom" secondItem="BSu-FJ-dfV" secondAttribute="bottom" id="pBQ-Os-gT4"/>
+                <constraint firstAttribute="trailing" secondItem="JUY-bd-qDj" secondAttribute="trailing" id="tty-Nn-MHa"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="675.5" y="196.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="goodsjia_h.png" width="23" height="23"/>
+        <image name="goodsjia_n.png" width="23" height="23"/>
+        <image name="goodsjian_h.png" width="23" height="23"/>
+        <image name="goodsjian_n.png" width="23" height="23"/>
+        <image name="newNum.png" width="40" height="70"/>
+    </resources>
+</document>

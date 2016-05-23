@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="KGk-i7-Jjw" customClass="DuihuanCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="蜂蜜余额共：0滴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JyY-mr-fye">
+                        <rect key="frame" x="8" y="11" width="304" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="iAD-vE-H4f"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="兑换成功后将直接充值到钱包" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZI-FC-qnD">
+                        <rect key="frame" x="8" y="64" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="non-1L-5ot"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100滴＝1元" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebG-0I-hdt">
+                        <rect key="frame" x="8" y="42" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Bc7-6W-KUh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ebG-0I-hdt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="28o-JQ-fs7"/>
+                    <constraint firstItem="WZI-FC-qnD" firstAttribute="top" secondItem="ebG-0I-hdt" secondAttribute="bottom" constant="1" id="8gp-ni-lZP"/>
+                    <constraint firstItem="ebG-0I-hdt" firstAttribute="top" secondItem="JyY-mr-fye" secondAttribute="bottom" constant="2" id="GgP-DF-DJT"/>
+                    <constraint firstAttribute="trailing" secondItem="WZI-FC-qnD" secondAttribute="trailing" constant="8" id="JvZ-GS-ebk"/>
+                    <constraint firstAttribute="trailing" secondItem="ebG-0I-hdt" secondAttribute="trailing" constant="8" id="LB0-bA-cPM"/>
+                    <constraint firstAttribute="trailing" secondItem="JyY-mr-fye" secondAttribute="trailing" constant="8" id="OkO-1G-2vb"/>
+                    <constraint firstItem="JyY-mr-fye" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="gth-Yo-VNy"/>
+                    <constraint firstItem="WZI-FC-qnD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="iHN-2m-brp"/>
+                    <constraint firstItem="JyY-mr-fye" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="sjI-53-5wF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="honyNu" destination="JyY-mr-fye" id="aWO-S7-NzZ"/>
+                <outlet property="oneYuan" destination="ebG-0I-hdt" id="jMH-Ux-oNT"/>
+            </connections>
+            <point key="canvasLocation" x="413" y="242.5"/>
+        </tableViewCell>
+    </objects>
+</document>

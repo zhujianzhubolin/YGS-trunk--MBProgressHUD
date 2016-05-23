@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LegalDetailHeaderV">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="181"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xba-7H-fwo">
+                    <rect key="frame" x="8" y="128" width="359" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="6Dj-A8-7GJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touxiang.png" translatesAutoresizingMaskIntoConstraints="NO" id="1bR-et-4s9">
+                    <rect key="frame" x="132" y="10" width="110" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="jMS-Za-3Wj"/>
+                        <constraint firstAttribute="width" constant="110" id="wOn-uP-SKZ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="擅长领域" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbt-MU-4JY">
+                    <rect key="frame" x="8" y="157" width="359" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="SW8-0C-jrG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.65098039215686276" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Xba-7H-fwo" firstAttribute="top" secondItem="1bR-et-4s9" secondAttribute="bottom" constant="8" id="7to-vg-eNe"/>
+                <constraint firstItem="Xba-7H-fwo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="CUa-1E-Eh1"/>
+                <constraint firstItem="1bR-et-4s9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="DT8-oB-tQE"/>
+                <constraint firstAttribute="trailing" secondItem="Xba-7H-fwo" secondAttribute="trailing" constant="8" id="RN6-kc-VDn"/>
+                <constraint firstItem="Xbt-MU-4JY" firstAttribute="top" secondItem="Xba-7H-fwo" secondAttribute="bottom" constant="8" id="W2l-ee-9qe"/>
+                <constraint firstAttribute="trailing" secondItem="Xbt-MU-4JY" secondAttribute="trailing" constant="8" id="XfU-gO-AF9"/>
+                <constraint firstItem="Xbt-MU-4JY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="coN-cP-h7s"/>
+                <constraint firstItem="1bR-et-4s9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="g5F-vo-ZPc"/>
+                <constraint firstItem="1bR-et-4s9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="q2S-eO-6bk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="q2S-eO-6bk"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="specialityL" destination="Xbt-MU-4JY" id="oHP-nw-csA"/>
+                <outlet property="userImgV" destination="1bR-et-4s9" id="dRu-U6-PAj"/>
+                <outlet property="userNameL" destination="Xba-7H-fwo" id="qBn-iL-cza"/>
+            </connections>
+            <point key="canvasLocation" x="641.5" y="77.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="touxiang.png" width="64" height="64"/>
+    </resources>
+</document>

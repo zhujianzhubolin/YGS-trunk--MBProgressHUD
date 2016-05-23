@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8DCB7CDE-85C0-4532-A7A6-FD737439CDBA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>O2OIntelligentCommunity</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>c913ceee-e34b-4350-8c2c-0d175cae8dc4++6864</key>
+		<string>svn://192.168.1.34:9600/ygs/app/iOS/08.06%2525252525252520O2O</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>O2OIntelligentCommunity.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>c913ceee-e34b-4350-8c2c-0d175cae8dc4++6864</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>c913ceee-e34b-4350-8c2c-0d175cae8dc4++6864</key>
+		<string>svn://192.168.1.34:9600/ygs</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn://192.168.1.34:9600/ygs/app/iOS/08.06%2525252525252520O2O/O2OIntelligentCommunity.xcworkspace</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>c913ceee-e34b-4350-8c2c-0d175cae8dc4++6864</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>c913ceee-e34b-4350-8c2c-0d175cae8dc4++6864</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SVN%E4%BB%A3%E7%A0%81</string>
+		</dict>
+	</array>
+</dict>
+</plist>

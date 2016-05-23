@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpLoadNewRentInfor">
+            <connections>
+                <outlet property="backView" destination="pa5-cW-kQO" id="RXl-ac-cxM"/>
+                <outlet property="myTableView" destination="eES-gD-N73" id="pty-Wr-aF5"/>
+                <outlet property="needRentbtn" destination="Yau-J8-4s9" id="a3V-n6-iCq"/>
+                <outlet property="outRent" destination="as6-gF-ml5" id="6VF-lK-e6K"/>
+                <outlet property="seleBtn" destination="wK6-qF-W5T" id="OvV-y6-RDX"/>
+                <outlet property="tiaozaochushou" destination="eRF-Ty-cwa" id="JXn-5L-RzH"/>
+                <outlet property="tiaozaoqiugou" destination="dBj-eV-M48" id="Ohm-eD-RhB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pa5-cW-kQO">
+                    <rect key="frame" x="0.0" y="64" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="as6-gF-ml5">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="dMa-uk-YlZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="出租" image="quan_n.png">
+                                <color key="titleColor" red="0.99215686270000003" green="0.33725490200000002" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="quan_S.png"/>
+                            <connections>
+                                <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="XNt-1o-IVk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yau-J8-4s9">
+                            <rect key="frame" x="126" y="0.0" width="125" height="64"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="求租" image="quan_n.png">
+                                <color key="titleColor" red="0.99215686270000003" green="0.33725490200000002" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="quan_S.png"/>
+                            <connections>
+                                <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="g3g-id-atO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wK6-qF-W5T">
+                            <rect key="frame" x="251" y="0.0" width="124" height="64"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="出售" image="quan_n.png">
+                                <color key="titleColor" red="0.99215686270000003" green="0.33725490200000002" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="quan_S.png"/>
+                            <connections>
+                                <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="ySb-5R-Qu8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBj-eV-M48">
+                            <rect key="frame" x="188" y="0.0" width="187" height="64"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="求购" image="quan_n.png">
+                                <color key="titleColor" red="0.99215686270000003" green="0.33725490200000002" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="quan_S.png"/>
+                            <connections>
+                                <action selector="tiaozao:" destination="-1" eventType="touchUpInside" id="hhv-XH-AxF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRF-Ty-cwa">
+                            <rect key="frame" x="0.0" y="0.0" width="187" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="3wH-JI-4Ug"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="出售" image="quan_n.png">
+                                <color key="titleColor" red="0.99215686270000003" green="0.33725490200000002" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="quan_S.png"/>
+                            <connections>
+                                <action selector="tiaozao:" destination="-1" eventType="touchUpInside" id="DPW-5z-cBO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.9137254901960784" green="0.92156862745098034" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="dBj-eV-M48" secondAttribute="trailing" id="4Ma-Fc-8z7"/>
+                        <constraint firstAttribute="trailing" secondItem="wK6-qF-W5T" secondAttribute="trailing" id="4yQ-uL-Eot"/>
+                        <constraint firstItem="wK6-qF-W5T" firstAttribute="leading" secondItem="Yau-J8-4s9" secondAttribute="trailing" id="7pZ-lU-7BN"/>
+                        <constraint firstItem="wK6-qF-W5T" firstAttribute="top" secondItem="pa5-cW-kQO" secondAttribute="top" id="AJy-bU-VMP"/>
+                        <constraint firstAttribute="height" constant="64" id="Ach-HV-4pK"/>
+                        <constraint firstItem="eRF-Ty-cwa" firstAttribute="top" secondItem="pa5-cW-kQO" secondAttribute="top" id="CTo-qS-yYH"/>
+                        <constraint firstItem="wK6-qF-W5T" firstAttribute="width" secondItem="as6-gF-ml5" secondAttribute="width" constant="-1" id="Cbz-Du-7fy"/>
+                        <constraint firstItem="as6-gF-ml5" firstAttribute="leading" secondItem="pa5-cW-kQO" secondAttribute="leading" id="E6U-em-aXb"/>
+                        <constraint firstItem="eRF-Ty-cwa" firstAttribute="width" secondItem="dBj-eV-M48" secondAttribute="width" id="EfE-3T-whn"/>
+                        <constraint firstItem="dBj-eV-M48" firstAttribute="top" secondItem="pa5-cW-kQO" secondAttribute="top" id="Egf-92-UOj"/>
+                        <constraint firstItem="dBj-eV-M48" firstAttribute="leading" secondItem="eRF-Ty-cwa" secondAttribute="trailing" constant="1" id="Ei9-Lg-T4R"/>
+                        <constraint firstItem="wK6-qF-W5T" firstAttribute="height" secondItem="Yau-J8-4s9" secondAttribute="height" id="I9O-Nx-6qa"/>
+                        <constraint firstItem="wK6-qF-W5T" firstAttribute="height" secondItem="as6-gF-ml5" secondAttribute="height" id="RHE-vT-ImU"/>
+                        <constraint firstItem="Yau-J8-4s9" firstAttribute="top" secondItem="pa5-cW-kQO" secondAttribute="top" id="gTn-GO-Yhv"/>
+                        <constraint firstItem="eRF-Ty-cwa" firstAttribute="leading" secondItem="pa5-cW-kQO" secondAttribute="leading" id="hbf-lY-whn"/>
+                        <constraint firstItem="eRF-Ty-cwa" firstAttribute="height" secondItem="dBj-eV-M48" secondAttribute="height" id="iSw-2Y-fcA"/>
+                        <constraint firstItem="Yau-J8-4s9" firstAttribute="leading" secondItem="as6-gF-ml5" secondAttribute="trailing" constant="1" id="lfA-6h-XZ1"/>
+                        <constraint firstItem="wK6-qF-W5T" firstAttribute="width" secondItem="Yau-J8-4s9" secondAttribute="width" constant="-1" id="mzy-QT-cd2"/>
+                        <constraint firstItem="as6-gF-ml5" firstAttribute="top" secondItem="pa5-cW-kQO" secondAttribute="top" id="up4-Ct-rnX"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="eES-gD-N73">
+                    <rect key="frame" x="0.0" y="128" width="375" height="539"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pa5-cW-kQO" secondAttribute="trailing" id="3Gf-Gw-JfU"/>
+                <constraint firstItem="pa5-cW-kQO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HzU-xf-2OC"/>
+                <constraint firstItem="eES-gD-N73" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JWM-hU-q5P"/>
+                <constraint firstItem="eES-gD-N73" firstAttribute="top" secondItem="pa5-cW-kQO" secondAttribute="bottom" id="LTt-Ai-ycB"/>
+                <constraint firstAttribute="bottom" secondItem="eES-gD-N73" secondAttribute="bottom" id="PBF-fh-KDe"/>
+                <constraint firstAttribute="trailing" secondItem="eES-gD-N73" secondAttribute="trailing" id="TkI-Ky-6y8"/>
+                <constraint firstItem="pa5-cW-kQO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="iD1-XT-B9e"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="658.5" y="201.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="quan_S.png" width="15" height="15"/>
+        <image name="quan_n.png" width="15" height="15"/>
+    </resources>
+</document>
