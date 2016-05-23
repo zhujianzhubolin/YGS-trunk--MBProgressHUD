@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="YGSDaiJinCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="1000" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quanBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="6KS-eD-5tN">
+                        <rect key="frame" x="11" y="0.0" width="299" height="99"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="满100减10元代金券" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjh-LW-exS">
+                        <rect key="frame" x="25" y="8" width="255" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="KfI-qh-Ap7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="适用于XXX面包店" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APm-Tv-hUh">
+                        <rect key="frame" x="25" y="40" width="279" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="MWv-l2-vbt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="10000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFP-Ii-3fb">
+                        <rect key="frame" x="288" y="14" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="U8Z-wP-0N9"/>
+                            <constraint firstAttribute="height" constant="16" id="xfS-Gl-Vm3"/>
+                        </constraints>
+                        <state key="normal" image="gou.png"/>
+                        <state key="selected" image="gou_h.png"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有效期至2015-12-31" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1Q-Sx-Da7">
+                        <rect key="frame" x="25" y="76" width="279" height="23"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="l65-Vk-dbH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Xjh-LW-exS" secondAttribute="trailing" constant="40" id="1K0-ZY-DnX"/>
+                    <constraint firstAttribute="trailing" secondItem="APm-Tv-hUh" secondAttribute="trailing" constant="16" id="2qv-bX-ySu"/>
+                    <constraint firstItem="K1Q-Sx-Da7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="17" id="4do-35-xoj"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="K1Q-Sx-Da7" secondAttribute="bottom" constant="-8" id="8Ul-OD-wU3"/>
+                    <constraint firstItem="6KS-eD-5tN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="JUH-Nh-IC6"/>
+                    <constraint firstItem="Xjh-LW-exS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Lr3-eG-qvt"/>
+                    <constraint firstItem="APm-Tv-hUh" firstAttribute="top" secondItem="Xjh-LW-exS" secondAttribute="bottom" constant="2" id="TtA-Y5-Nsn"/>
+                    <constraint firstItem="6KS-eD-5tN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="XCz-6U-ZmR"/>
+                    <constraint firstAttribute="bottom" secondItem="6KS-eD-5tN" secondAttribute="bottom" id="cby-WO-XOU"/>
+                    <constraint firstItem="APm-Tv-hUh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="jWw-e2-J05"/>
+                    <constraint firstItem="Xjh-LW-exS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="qeJ-ub-S1A"/>
+                    <constraint firstItem="EFP-Ii-3fb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="ss2-GZ-vdF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="K1Q-Sx-Da7" secondAttribute="trailing" constant="8" id="udE-De-rPy"/>
+                    <constraint firstAttribute="trailing" secondItem="6KS-eD-5tN" secondAttribute="trailing" constant="10" id="vg1-BC-X5b"/>
+                    <constraint firstAttribute="trailing" secondItem="EFP-Ii-3fb" secondAttribute="trailing" constant="16" id="yhy-rd-zYM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="bgImg" destination="6KS-eD-5tN" id="V8c-NT-NSo"/>
+                <outlet property="condiction" destination="Xjh-LW-exS" id="mfX-Wp-TrU"/>
+                <outlet property="gouBtn" destination="EFP-Ii-3fb" id="yDP-MK-dd8"/>
+                <outlet property="lastTime" destination="K1Q-Sx-Da7" id="ZYb-PD-YvK"/>
+                <outlet property="shopName" destination="APm-Tv-hUh" id="egE-QU-F8f"/>
+            </connections>
+            <point key="canvasLocation" x="963" y="367"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gou.png" width="16" height="16"/>
+        <image name="gou_h.png" width="16" height="16"/>
+        <image name="quanBack.png" width="351" height="71"/>
+    </resources>
+</document>

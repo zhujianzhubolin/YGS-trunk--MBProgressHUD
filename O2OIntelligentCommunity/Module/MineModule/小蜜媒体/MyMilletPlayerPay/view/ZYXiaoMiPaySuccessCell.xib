@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ZYXiaoMiPaySuccessCell" rowHeight="174" id="KGk-i7-Jjw" customClass="ZYXiaoMiPaySuccessCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gou_h.png" translatesAutoresizingMaskIntoConstraints="NO" id="JOV-1X-Rw7">
+                        <rect key="frame" x="158" y="21" width="59" height="58"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="59" id="M7a-xt-ZW4"/>
+                            <constraint firstAttribute="height" constant="58" id="oSO-mu-zAI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付成功" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXU-Xk-L5c">
+                        <rect key="frame" x="41" y="87" width="292" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="YqI-KC-2mK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMn-c0-TQ4">
+                        <rect key="frame" x="42" y="132" width="290" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="zyy-Xu-yH9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JOV-1X-Rw7" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="0i3-40-KDh"/>
+                    <constraint firstItem="RXU-Xk-L5c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="41" id="2ZJ-0j-09u"/>
+                    <constraint firstItem="JOV-1X-Rw7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="IfM-Vf-rk0"/>
+                    <constraint firstAttribute="trailing" secondItem="cMn-c0-TQ4" secondAttribute="trailing" constant="43" id="Ml8-9o-weH"/>
+                    <constraint firstItem="cMn-c0-TQ4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="42" id="flA-8q-63b"/>
+                    <constraint firstAttribute="trailing" secondItem="RXU-Xk-L5c" secondAttribute="trailing" constant="42" id="mx4-iq-Ujb"/>
+                    <constraint firstItem="RXU-Xk-L5c" firstAttribute="top" secondItem="JOV-1X-Rw7" secondAttribute="bottom" constant="8" id="pFc-vK-X3p"/>
+                    <constraint firstItem="cMn-c0-TQ4" firstAttribute="top" secondItem="RXU-Xk-L5c" secondAttribute="bottom" constant="8" id="ruu-bt-i1j"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="MoneyLab" destination="cMn-c0-TQ4" id="sRP-KG-PQA"/>
+                <outlet property="StateLab" destination="RXU-Xk-L5c" id="4RI-kO-hU8"/>
+                <outlet property="imgV" destination="JOV-1X-Rw7" id="yar-j1-ecM"/>
+            </connections>
+            <point key="canvasLocation" x="743.5" y="280"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gou_h.png" width="16" height="16"/>
+    </resources>
+</document>

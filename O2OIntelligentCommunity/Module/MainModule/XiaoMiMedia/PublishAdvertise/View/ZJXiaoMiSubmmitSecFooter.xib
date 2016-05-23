@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZJXiaoMiSubmmitSecFooter">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLg-qX-9HE">
+                    <rect key="frame" x="20" y="27" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="Ow2-Uz-5Pv"/>
+                        <constraint firstAttribute="height" constant="15" id="xUb-Sy-Lo7"/>
+                    </constraints>
+                    <state key="normal" image="adressKuang.png"/>
+                    <state key="selected" image="adressGou.png"/>
+                    <connections>
+                        <action selector="clickBtnForIsAgree:" destination="iN0-l3-epB" eventType="touchUpInside" id="YBg-XG-7af"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我已阅读并同意" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afn-2q-XTx">
+                    <rect key="frame" x="38" y="26" width="98" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="98" id="F0h-YL-rmn"/>
+                        <constraint firstAttribute="height" constant="18" id="Reo-8i-ohJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="174-9a-tOZ">
+                    <rect key="frame" x="132" y="24" width="149" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="149" id="4kF-De-SGU"/>
+                        <constraint firstAttribute="height" constant="22" id="MlS-pa-hEX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="移公社小蜜媒体发布协议">
+                        <color key="titleColor" red="0.98823529409999999" green="0.42745098040000001" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnForProtocal:" destination="iN0-l3-epB" eventType="touchUpInside" id="1AW-F5-Vpo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sL-n1-Dja">
+                    <rect key="frame" x="20" y="54" width="335" height="46"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.4941176471" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="KSp-JM-VzN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <state key="normal" title="提  交">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnForSubmmit:" destination="iN0-l3-epB" eventType="touchUpInside" id="Jty-4F-NdM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3sL-n1-Dja" secondAttribute="bottom" constant="20" id="F5v-vc-Xae"/>
+                <constraint firstItem="3sL-n1-Dja" firstAttribute="top" secondItem="174-9a-tOZ" secondAttribute="bottom" constant="8" id="Kqv-A3-gl3"/>
+                <constraint firstItem="3sL-n1-Dja" firstAttribute="top" secondItem="afn-2q-XTx" secondAttribute="bottom" constant="10" id="LsD-WW-hUi"/>
+                <constraint firstItem="3sL-n1-Dja" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Ttn-A8-W9s"/>
+                <constraint firstAttribute="trailing" secondItem="3sL-n1-Dja" secondAttribute="trailing" constant="20" id="WcP-xv-UYy"/>
+                <constraint firstItem="bLg-qX-9HE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="c05-j9-wLq"/>
+                <constraint firstItem="afn-2q-XTx" firstAttribute="leading" secondItem="bLg-qX-9HE" secondAttribute="trailing" constant="3" id="fFw-JS-FZl"/>
+                <constraint firstItem="174-9a-tOZ" firstAttribute="leading" secondItem="bLg-qX-9HE" secondAttribute="trailing" constant="97" id="ggK-gH-RJu"/>
+                <constraint firstItem="3sL-n1-Dja" firstAttribute="top" secondItem="bLg-qX-9HE" secondAttribute="bottom" constant="12" id="rQp-w5-UaL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="agreeBtn" destination="bLg-qX-9HE" id="UBn-db-rgU"/>
+                <outlet property="protocalBtn" destination="174-9a-tOZ" id="vSM-fZ-VaH"/>
+                <outlet property="submmitBtn" destination="3sL-n1-Dja" id="VDP-09-UqT"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="adressGou.png" width="21" height="21"/>
+        <image name="adressKuang.png" width="21" height="21"/>
+    </resources>
+</document>

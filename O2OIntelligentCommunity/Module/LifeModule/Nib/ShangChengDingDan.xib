@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShangChengDingDan">
+            <connections>
+                <outlet property="shangcheng" destination="vJD-ps-GP3" id="rex-e7-fBU"/>
+                <outlet property="totalPriceLable" destination="vdD-cs-ARr" id="WSx-rk-Fz6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="vJD-ps-GP3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="separatorColor" red="0.91764705882352937" green="0.92156862745098034" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计:1234元" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdD-cs-ARr">
+                    <rect key="frame" x="0.0" y="600" width="230" height="67"/>
+                    <color key="backgroundColor" red="0.17254901959999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="67" id="Of4-fc-QqU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swm-7y-dXa">
+                    <rect key="frame" x="230" y="600" width="145" height="67"/>
+                    <color key="backgroundColor" red="1" green="0.42352941176470588" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="67" id="jRf-1O-hKt"/>
+                        <constraint firstAttribute="width" constant="145" id="tBx-Q6-UOj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="确  认">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="querendingdan:" destination="-1" eventType="touchUpInside" id="hf4-TE-9cf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vdD-cs-ARr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7Ck-sf-MDu"/>
+                <constraint firstItem="swm-7y-dXa" firstAttribute="top" secondItem="vJD-ps-GP3" secondAttribute="bottom" id="GYx-4i-TAB"/>
+                <constraint firstAttribute="trailing" secondItem="vJD-ps-GP3" secondAttribute="trailing" id="QN8-n0-PZq"/>
+                <constraint firstItem="vJD-ps-GP3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="W26-Sm-G0F"/>
+                <constraint firstAttribute="bottom" secondItem="swm-7y-dXa" secondAttribute="bottom" id="XEb-c7-yCT"/>
+                <constraint firstItem="vJD-ps-GP3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jw7-b3-AoP"/>
+                <constraint firstAttribute="trailing" secondItem="swm-7y-dXa" secondAttribute="trailing" id="lYC-cq-9Rc"/>
+                <constraint firstItem="swm-7y-dXa" firstAttribute="leading" secondItem="vdD-cs-ARr" secondAttribute="trailing" id="p73-bI-MKq"/>
+                <constraint firstAttribute="bottom" secondItem="vdD-cs-ARr" secondAttribute="bottom" id="wcx-Or-kgU"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="677.5" y="260.5"/>
+        </view>
+    </objects>
+</document>

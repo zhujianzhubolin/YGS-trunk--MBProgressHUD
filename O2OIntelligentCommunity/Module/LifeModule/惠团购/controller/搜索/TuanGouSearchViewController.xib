@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TuanGouSearchViewController">
+            <connections>
+                <outlet property="backView" destination="hhr-BQ-zG8" id="JZD-Vw-M3T"/>
+                <outlet property="huiTuanList" destination="trL-1t-49E" id="WeC-91-Gcu"/>
+                <outlet property="searchContent" destination="col-4k-z9Z" id="LEv-Nt-dHf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhr-BQ-zG8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入您感兴趣的商家、团购吧~" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="col-4k-z9Z">
+                            <rect key="frame" x="11" y="4" width="353" height="36"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="col-4k-z9Z" secondAttribute="bottom" constant="4" id="6fh-Yh-8xd"/>
+                        <constraint firstItem="col-4k-z9Z" firstAttribute="top" secondItem="hhr-BQ-zG8" secondAttribute="top" constant="4" id="88Y-yw-N8G"/>
+                        <constraint firstItem="col-4k-z9Z" firstAttribute="leading" secondItem="hhr-BQ-zG8" secondAttribute="leading" constant="11" id="APf-PQ-jXe"/>
+                        <constraint firstAttribute="height" constant="44" id="QRf-OW-E0C"/>
+                        <constraint firstAttribute="trailing" secondItem="col-4k-z9Z" secondAttribute="trailing" constant="11" id="UJR-38-zov"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="trL-1t-49E">
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="trL-1t-49E" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4jI-AS-ajf"/>
+                <constraint firstAttribute="bottom" secondItem="trL-1t-49E" secondAttribute="bottom" id="4zS-4c-uOJ"/>
+                <constraint firstItem="hhr-BQ-zG8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="G1u-Gz-DIw"/>
+                <constraint firstItem="hhr-BQ-zG8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RXx-WP-Bbd"/>
+                <constraint firstItem="trL-1t-49E" firstAttribute="top" secondItem="hhr-BQ-zG8" secondAttribute="bottom" id="ZLw-kP-ule"/>
+                <constraint firstAttribute="trailing" secondItem="hhr-BQ-zG8" secondAttribute="trailing" id="gX4-W0-rSH"/>
+                <constraint firstAttribute="trailing" secondItem="trL-1t-49E" secondAttribute="trailing" id="gcT-bf-F1m"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="1112.5" y="-73.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="56" id="KGk-i7-Jjw" customClass="OrderGoodslistCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImg.png" translatesAutoresizingMaskIntoConstraints="NO" id="suy-rl-iyk">
+                        <rect key="frame" x="8" y="4" width="51" height="47"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="51" id="neB-gm-0iN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaJ-OO-Ui7">
+                        <rect key="frame" x="67" y="8" width="245" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AaJ-OO-Ui7" firstAttribute="leading" secondItem="suy-rl-iyk" secondAttribute="trailing" constant="8" id="F8t-A4-Fha"/>
+                    <constraint firstItem="suy-rl-iyk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="IeR-9l-qRT"/>
+                    <constraint firstAttribute="bottom" secondItem="AaJ-OO-Ui7" secondAttribute="bottom" constant="8" id="N1h-Q1-I9i"/>
+                    <constraint firstItem="suy-rl-iyk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="Tu7-WT-Tyr"/>
+                    <constraint firstAttribute="bottom" secondItem="suy-rl-iyk" secondAttribute="bottom" constant="4" id="kjF-LC-V0M"/>
+                    <constraint firstAttribute="trailing" secondItem="AaJ-OO-Ui7" secondAttribute="trailing" constant="8" id="onA-rz-yHI"/>
+                    <constraint firstItem="AaJ-OO-Ui7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="zDW-jA-wP3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="goodsName" destination="AaJ-OO-Ui7" id="ey0-J1-Ge5"/>
+                <outlet property="imageView" destination="suy-rl-iyk" id="xuS-5q-reE"/>
+            </connections>
+            <point key="canvasLocation" x="347" y="369"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="defaultImg.png" width="63" height="63"/>
+    </resources>
+</document>
