@@ -24,7 +24,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
     NSLog(@"test git modify");
+    NSLog(@"branch add test git modify");
     UIStoryboard *mainTB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     self.myTBVC = [mainTB instantiateInitialViewController];
 
